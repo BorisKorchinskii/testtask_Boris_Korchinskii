@@ -1,0 +1,23 @@
+Note: Sadly, I am stuck on test step #7. I think the idea there is to add all the correct links to the collection,
+filter by link partial names, and then compare with a collection containing the correct theme's name using Assert equals.
+Tests running smoothly on chrome but issues with firefox due to driver.
+
+To set browser properties use:
+- To set chrome
+browser=chrome
+- To set firefox
+browser=firefox
+- To set URL copy/paste URL to
+url=
+
+To run tests using TestNG profiles use:
+= For Test Case 1
+mvn test -PSmoke
+= For Test Case 2
+mvn test -PRegression
+
+To run tests without profiles use:
+= For Test Case 1
+mvn -Dtest=BingoOneTest test
+= For Test Case 2
+mvn -Dtest=BingoTwoTest test
